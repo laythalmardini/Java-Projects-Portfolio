@@ -1,22 +1,22 @@
-# Forest Simulation Engine – Logic & Dual Persistence
+# Forest Simulation Engine
+**Advanced OOP & Data Persistence**
 
-This project is a Java-based simulation engine built to demonstrate advanced Object-Oriented Programming (OOP) and sophisticated data management. It focuses on creating a modular 10x10 grid world where diverse entities interact through a unified interface system.
+A Java-based simulation engine managing a 10x10 grid world where entities interact through a unified interface system.
 
-### 🛠 Technical Blueprint
-* **Object-Oriented Architecture**: Leverages **Interfaces** and **Polymorphism** to decouple the core engine logic from specific entity behaviors (like Robots or Trees), ensuring the system is easily scalable.
-* **Modular Design**: Developed with a strict **Separation of Concerns**, following standard Java project conventions to keep business logic independent from the user interface.
-* **Complex State Management**: Utilizes `HashMap` coordinate tracking to manage spatial data and entity interactions efficiently across the grid.
+## 🛠 Technical Highlights
 
-### 💾 Why Dual Persistence?
-To explore different architectural needs and data handling strategies, I implemented two distinct ways to save the world state:
+### 🏗 Object-Oriented Architecture
+* **Polymorphism & Interfaces**: Decouples engine logic from specific behaviors using `Item` and `Moveable` interfaces.
+* **Abstract Inheritance**: Utilizes `AbstractItem` and `AbstractMoveableItem` to enforce shared logic across entities like Robots, Wolves, and Trees.
+* **Spatial Tracking**: Efficient coordinate-based tracking for entity positions and interaction logic.
 
-1. **JSON Implementation**: Used for transparency and easy debugging. It allows for human-readable configuration of the grid coordinates and entity attributes.
-2. **Binary Serialization**: Chosen for its "snapshot" capability. This allows the JVM to rebuild complex object graphs which includes Interfaces and Abstract classes, instantly without the need for manual parsing.
+### 💾 Dual Persistence
+The engine implements two distinct strategies for saving the world state:
+1. **JSON (Jackson)**: Provides a human-readable, editable world configuration for easy debugging.
+2. **Binary Serialization**: Captures high-fidelity snapshots of the object graph for instant restoration.
 
-
-
-### 🚀 How to Run
-To run the application from your terminal, navigate to the `app` directory and use:
+## 🚀 How to Run
+From the `Forest-Game` directory, use the Gradle wrapper:
 
 ```bash
 ./gradlew run
