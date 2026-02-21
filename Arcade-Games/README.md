@@ -7,7 +7,26 @@ A collection of interactive Java Swing applications focused on responsive UI des
 
 ## 🕹️ Current Games
 
-### 🐹 Whac-A-Mole
+
+### 🍕 PacMan
+
+A grid-based maze game featuring pathfinding logic and asset-driven animations.
+
+- **Entity Management**  
+  Utilizes dedicated classes for `Player`, `Ghost`, and `Food` entities to handle collision and movement.
+
+- **Dynamic Level Loading**  
+  Features a multi-level system that parses string-based maps into playable game boards.
+
+- **State-Driven Rendering**  
+  Manages game states for win/loss conditions and power-up durations like Scared Ghosts.
+
+- **Asset Pipeline**  
+  Integrates high-resolution PNG sprites for Pac-Man, ghosts, and environment tiles.
+
+
+---
+### 🐹 WhacAMole
 
 A classic arcade implementation built using Java AWT and Swing libraries.
 
@@ -27,7 +46,7 @@ A classic arcade implementation built using Java AWT and Swing libraries.
 
 ## 🔜 Coming Soon
 
-### 🟡 Pac-Man
+### 🕊️ Flappy Bird
 
 The next major addition to the arcade collection.
 
@@ -37,14 +56,14 @@ The next major addition to the arcade collection.
 
 To play a game, navigate into its directory and use the Gradle wrapper.
 
-### 🎯 Whac-A-Mole
+### 🎯 WhacAMole
 
 ```bash
 cd WhacAMole
 ./gradlew run
 ```
 
-### 🟡 Pac-Man (Coming Soon)
+### 🟡 PacMan
 
 ```bash
 cd PacMan
