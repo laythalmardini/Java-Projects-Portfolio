@@ -47,8 +47,15 @@ cd Arcade-Games/WhacAMole
 ./gradlew run
 ```
 
+### 🍕 PacMan (Arcade)
+
+```bash
+cd Arcade-Games/PacMan
+./gradlew run
+```
+
 ---
 
 ## 👤 Maintained By
 
-**Layth Almardini**
+**Layth Al Mardini**
