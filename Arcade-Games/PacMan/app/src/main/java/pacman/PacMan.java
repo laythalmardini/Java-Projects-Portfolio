@@ -140,7 +140,7 @@ public class PacMan extends JPanel implements ActionListener, KeyListener {
         
         int speedDivisor = 8 - (index * 2);
 
-        String[] currentMap = levels[2];
+        String[] currentMap = levels[0];
         for (int row = 0; row < rowCount; row++) {
             for (int column = 0; column < currentMap[row].length(); column++) {
                 char tile = currentMap[row].charAt(column);
